@@ -9004,6 +9004,6 @@ const issues = [
 
 var issuesWithUpdatedApiUrl = issues.map(function(issue){
   return Object.assign({}, issue, {
-    url: 'api--v'
+    url: 'api--v2.github.com'
   });
 })
