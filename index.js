@@ -9022,3 +9022,8 @@ var openIssues = issues.filter(function(issue, index){
 var nonAutomaticIssues = issues.filter(function(issue){
   return issue.body != "This pull request has been automatically created by learn.co.";
 })
+
+document.getElementById("results").innerHTML = issues.map(function(issue){
+  return "<tr> <td>" + issue.body + "</td> <td>" + issue.created_at + "</td> <td>"+ issue.state + "</td> </tr>"
+}).join();
+
