@@ -9016,5 +9016,5 @@ var commentCountAcrossIssues = issues.map(function(issue){
 
 var openIssues = issues.filter(function(issue, index){
   return issue.state == 'open'
-    
+
 })
