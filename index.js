@@ -9007,3 +9007,7 @@ var issuesWithUpdatedApiUrl = issues.map(function(issue){
     url: 'api-v2.github.com'
   });
 })
+
+var commentCountAcrossIssues = issues.map(function(issue){
+  return {issue.comments_count};
+})
