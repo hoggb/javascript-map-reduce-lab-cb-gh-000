@@ -9014,10 +9014,10 @@ var commentCountAcrossIssues = issues.map(function(issue){
   return accumulator + currentValue;
 })
 
-var openIssues = issues.map(function(issue){
+var openIssues = issues.map(function(issue, index){
   if(issue.state == 'open'){
     return issue;
   }else{
-    delete issue;
+    delete(issue);
   }
 })
