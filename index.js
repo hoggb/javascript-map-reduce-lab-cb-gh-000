@@ -9013,3 +9013,11 @@ var commentCountAcrossIssues = issues.map(function(issue){
 }).reduce(function(accumulator, currentValue){
   return accumulator + currentValue;
 })
+
+var openIssues = issues.map(function(issue){
+  if(issue.state == "open"){
+    return Object.assign({}, issue, {
+      
+    });
+  }
+})
