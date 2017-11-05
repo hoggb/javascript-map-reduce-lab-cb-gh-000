@@ -9016,8 +9016,6 @@ var commentCountAcrossIssues = issues.map(function(issue){
 
 var openIssues = issues.map(function(issue){
   if(issue["state"] == "open"){
-    return Object.assign({}, issue, {
-
-    });
+    return Object.assign({}, issue, issue);
   }
 })
