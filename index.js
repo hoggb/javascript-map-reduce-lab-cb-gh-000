@@ -9010,4 +9010,6 @@ var issuesWithUpdatedApiUrl = issues.map(function(issue){
 
 var commentCountAcrossIssues = issues.map(function(issue){
   return {issue.comments_count};
+}).reduce(function(accumulator, currentValue){
+  return accumulator + currentValue;
 })
