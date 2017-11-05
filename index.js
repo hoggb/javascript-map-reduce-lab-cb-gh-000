@@ -9018,5 +9018,5 @@ var openIssues = issues.map(function(issue){
   if(issue.state == 'open'){
     return issue;
   }
-  return null;
+  return {};
 })
