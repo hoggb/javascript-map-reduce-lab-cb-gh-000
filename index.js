@@ -9026,4 +9026,3 @@ var nonAutomaticIssues = issues.filter(function(issue){
 document.getElementById("results").innerHTML = issues.map(function(issue){
   return "<tr> <td>" + issue.body + "</td> <td>" + issue.created_at + "</td> <td>"+ issue.state + "</td> </tr>"
 }).join();
-
